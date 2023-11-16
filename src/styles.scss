@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --white-bg: #F2F2F2;
+  --blue-std: #25C7D9;
+  --green-dark: #3255e1;
+  --green-mid: #6580eb;
+  --green-light: #9badf6;
+  --text-black: #0D0D0D;
+  --blue-bg: #5269c7;
+
+  font-family: "rawline", helvetica, arial, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-grow: 1;
+}
+
+h1 {
+  color: var(--blue-std);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#login-logoff {
+  background-color: var(--blue-std);
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--white-bg);
+  min-width: fit-content;
+  padding: 5px;
+  height: 40px;
+  border: 1px solid var(--text-black);
+}
+
+p,
+pre,
+span,
+input,
+select,
+label {
+  font-size: large;
+}

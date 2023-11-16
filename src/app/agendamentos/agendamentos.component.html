@@ -1,0 +1,99 @@
+<app-header></app-header>
+
+<main id="agendamentos">
+  <div id="divFiltro">
+    <select name="filtroEspecialidade" id="filtroEspecialidade" class="filtroSelect">
+      <option value="">Selecione a especialidade</option>
+      <option value="alergologista">Alergologista</option>
+      <option value="pediatra">Pediatra</option>
+      <option value="psiquiatra">Psiquiatra</option>
+      <option value="ginecologista">Ginecologista</option>
+      <option value="neurologista">Neurologista</option>
+    </select>
+    <select name="filtroEProcedimento" id="filtroEProcedimento" class="filtroSelect">
+      <option value="">Selecione o procedimento</option>
+      <option value="cirurgia">Cirurgia</option>
+      <option value="consulta">Consulta</option>
+      <option value="exame">Exame</option>
+    </select>
+    <input id="filtro" type="text" placeholder="Digite a informação que deseja filtrar.">
+    <button id="procurar">🔎</button>
+    <input type="button" value="Histórico" id="historico">
+  </div>
+
+  <section id="dialogo">
+
+    <div id="compromissos">
+      <h2>Consultas agendadas</h2>
+      <div class="compromissos">
+        <div id="item1">
+          <span class="titulo-agendamento" id="agendamento1"> </span>
+          <pre id="descricao1">
+
+                        </pre>
+          <div class="confirmacao">
+            <input type="button" id="confirmar1" class="confirmar" value="Confirmar">
+            <input type="button" id="cancelar1" class="cancelar" value="Cancelar">
+            <input type="button" id="detalhes1" value="Detalhes" class="detalhes">
+          </div>
+        </div>
+        <div id="divDetalhes1" style="display: none;">
+          <h3>Tentativas de contato</h3>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+        </div>
+      </div>
+      <div class="compromissos">
+        <div id="item2">
+          <span class="titulo-agendamento" id="agendamento2"> </span>
+          <pre id="descricao2">
+
+                        </pre>
+          <div class="confirmacao">
+            <input type="button" id="confirmar2" class="confirmar" value="Confirmar">
+            <input type="button" id="cancelar2" class="cancelar" value="Cancelar">
+            <input type="button" id="detalhes2" value="Detalhes" class="detalhes">
+          </div>
+        </div>
+        <div id="divDetalhes2" style="display: none;">
+          <h3>Tentativas de contato</h3>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+        </div>
+      </div>
+      <div class="compromissos">
+        <div id="item3">
+          <span class="titulo-agendamento" id="agendamento3"> </span>
+          <pre id="descricao3">
+
+                        </pre>
+          <div class="confirmacao">
+            <input type="button" id="confirmar3" class="confirmar" value="Confirmar">
+            <input type="button" id="cancelar3" class="cancelar" value="Cancelar">
+            <input type="button" id="detalhes3" value="Detalhes" class="detalhes">
+          </div>
+        </div>
+        <div id="divDetalhes3" style="display: none;">
+          <h3>Tentativas de contato</h3>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+          <span>dd/mm/aa - Tentativa de contato via</span>
+        </div>
+      </div>
+    </div>
+    <div id="calendar">
+      <img id="calendar" src="../../assets/calendario.png" alt="calendarIcon">
+    </div>
+
+  </section>
+</main>
+
+<app-footer></app-footer>

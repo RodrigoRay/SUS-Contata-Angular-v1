@@ -1,0 +1,51 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  background: var(--blue-bg);
+  margin-top: 60px;
+  border-radius: 12px;
+}
+
+#menu-footer {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+#menu-footer li,
+#menu-footer a {
+  text-decoration: none;
+}
+
+#contatos ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-right: 16px;
+}
+
+#contatos ul li,
+#contatos ul a {
+  text-decoration: none;
+  margin: 4px;
+}
+
+footer p,
+footer a {
+  color: var(--white-bg);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.apoiadores {
+  max-height: 100px;
+  padding: 20px;
+  background: radial-gradient(var(--white-bg), var(--blue-bg) 75%);
+}
+
+#contatos img {
+  max-height: 30px;
+}
