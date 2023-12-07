@@ -1,0 +1,83 @@
+<app-header></app-header>
+
+<form action="agendamento" method="post" class="align-items-center d-flex flex-column flex-shrink-1">
+
+  <h2 class="mb-3">Novo Agendamento</h2>
+
+  <div class="fieldCliente d-flex flex-column w-50">
+
+    <fieldset class="form-control">
+
+      <legend>Selecionar Cliente</legend>
+
+      <label for="clienteCPF" class="col-form-label">Digite o CPF do cliente: </label>
+      <input type="text" name="clienteCPF" id="clienteCPF" class="form-control">
+
+      <label for="clienteNome" class="col-form-label">Nome: </label>
+      <input type="text" name="clienteNome" id="clienteNome" class="form-control " disabled readonly>
+
+      <label for="dataNascimento" class="col-form-label">Data de nascimento: </label>
+      <input type="date" class="form-control" disabled readonly>
+
+      <label for="ClienteEndereco" class="col-form-label">Endereço: </label>
+      <textarea name="clienteEndereco" id="clienteEndereco" class="form-control" disabled readonly></textarea>
+
+    </fieldset>
+
+  </div>
+
+  <div class="fieldAgendamento d-flex flex-column w-50">
+
+    <fieldset class="form-control">
+
+      <legend>Solicitar Agendamento</legend>
+
+      <label for="" class="col-form-label">Unidade: </label>
+      <select name="selUnidade" id="selUnidade" class="form-control">
+        <option selected >Selecionar UBS</option>
+        <option value="1">UBS - Vila Nova</option>
+        <option value="2">UBS - Vila Garcia</option>
+        <option value="3">UBS - Itapeva</option>
+        <option value="4">UBS - Barra Funda</option>
+        <option value="5">UBS - Novo Mundo</option>
+        <option value="6">UBS - Vila Amorim</option>
+        <option value="7">UBS - Jardim Archila</option>
+        <option value="8">UBS - Jardim Serrano</option>
+        <option value="9">UBS - Jardim Clarice</option>
+        <option value="10">UBS - Parque Bela Vista</option>
+        <option value="11">UBS - Rio Acima</option>
+        <option value="12">ESF - Green Valley</option>
+        <option value="13">ESF - Jardim Tatiana</option>
+        <option value="14">ESF - PROMORAR</option>
+      </select>
+
+      <div class="d-flex flex-row">
+        <div class="flex-column w-50">
+          <label for="data" class="col-form-label">Data: </label>
+          <input type="date" name="data" id="data" class="form-control">
+        </div>
+
+        <div class="flex-column w-50">
+          <label for="horario" class="col-form-label">Horario: </label>
+          <input type="time" name="horario" id="horario" class="form-control">
+        </div>
+      </div>
+
+      <label for="tipoAtendimento" class="col-form-label"> Tipo atendimento: </label>
+      <select name="tipoAtendimento" id="tipoAtendimento" class="form-control">
+        <option selected>Selecionar tipo de atendimento</option>
+        <option value="Consulta">Consulta</option>
+        <option value="Exame">Exame</option>
+        <option value="Procedimento">Procedimento</option>
+        <option value="Retorno">Retorno</option>
+      </select>
+
+      <label for="especialidade" class="col-form-label">Especialidade: </label>
+      <input type="text" class="form-control">
+    </fieldset>
+
+  </div>
+
+</form>
+
+<app-footer></app-footer>

@@ -1,4 +1,4 @@
-footer {
+.card {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -34,16 +34,20 @@ footer {
 }
 
 footer p,
-footer a {
+.card a {
   color: var(--white-bg);
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
 }
 
+#apoiadores {
+  height: 100px;
+}
 .apoiadores {
-  max-height: 100px;
+  max-height: fit-content;
+  min-height: fit-content;
   padding: 20px;
-  background: radial-gradient(var(--white-bg), var(--blue-bg) 75%);
+  // background: radial-gradient(var(--white-bg), var(--blue-bg) 75%);
 }
 
 #contatos img {

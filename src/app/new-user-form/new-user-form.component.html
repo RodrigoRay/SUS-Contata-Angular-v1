@@ -1,0 +1,131 @@
+<app-header></app-header>
+
+  <form (ngSubmit)="onSubmit()" action="usuario" method="post" class="d-flex flex-column align-items-center">
+    <h2 class="mb-3">Cadastrar Novo Usuario</h2>
+
+    <div class="d-flex flex-row flex-wrap flex-shrink-1">
+
+      <fieldset class="fieldset form-control">
+
+        <legend> Informações Pessoais</legend>
+
+        <label for="nomeCompleto" class="col-form-label">Nome Completo: </label>
+        <input type="text" name="nomeCompleto" id="nomeCompleto" class="form-control" [(ngModel)]="usuarioData.nomeCompleto">
+
+
+        <label for="cpf" class="col-form-label">CPF: </label>
+        <input type="text" name="cpf" id="cpf" class="form-control" [(ngModel)]="usuarioData.cpf">
+
+
+        <label for="dataNascimeto" class="col-form-label">Data de Nascimento: </label>
+        <input type="date" name="dataNascimento" id="dataNascimento" class="form-control" [(ngModel)]="usuarioData.dataNascimento">
+
+      </fieldset>
+
+
+      <fieldset class="fieldset form-control">
+
+        <legend>Informações de Contato</legend>
+
+        <label for="email" class="col-form-label">E-Mail: </label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="email@exemplo.com" [(ngModel)]="usuarioData.email">
+
+        <label for="tel1" class="col-form-label">Telefone 1: </label>
+        <input type="tel" name="tel1" id="tel1" class="form-control" [(ngModel)]="usuarioData.telefone1">
+
+        <label for="tel2" class="col-form-label">Telefone 2: </label>
+        <input type="tel" name="tel2" id="tel2" class="form-control" [(ngModel)]="usuarioData.telefone2">
+
+      </fieldset>
+
+    </div>
+
+    <div class="d-flex flex-row flex-wrap flex-shrink-1">
+
+      <fieldset class="fieldset form-control">
+
+        <legend>Contato Auxiliar 1</legend>
+
+        <select class="form-select" aria-label="Grau de parentesco" [(ngModel)]="usuarioData.aux1Parentesco">
+          <option selected>Grau de parentesco</option>
+          <option value="Mãe">Mãe</option>
+          <option value="Pai">Pai</option>
+          <option value="Filho(a)">Filho(a)</option>
+          <option value="Neto(a)">Neto(a)</option>
+          <option value="Cunhado(a)">Cunhado(a)</option>
+          <option value="Amigo(a)">Amigo(a)</option>
+          <option value="Vizinho(a)">Vizinho(a)</option>
+        </select>
+
+        <label for="nomeAux1" class="col-form-label">Nome: </label>
+        <input type="text" name="nomeAux1" id="nomeAux1" class="form-control" [(ngModel)]="usuarioData.aux1Nome">
+
+        <label for="emailAux1" class="col-form-label">E-Mail: </label>
+        <input type="email" name="emailAux1" id="emailAux1" class="form-control" placeholder="email@exemplo.com" [(ngModel)]="usuarioData.aux1Email">
+
+        <label for="telAux1" class="col-form-label">Telefone 1: </label>
+        <input type="tel" name="telAux1" id="telAux1" class="form-control" [(ngModel)]="usuarioData.aux1Tel1">
+
+        <label for="tel2Aux1" class="col-form-label">Telefone 2: </label>
+        <input type="tel" name="tel2Aux1" id="tel2Aux1" class="form-control" [(ngModel)]="usuarioData.aux1Tel2">
+
+      </fieldset>
+
+    <fieldset class="fieldset form-control">
+
+      <legend>Contato Auxiliar 2</legend>
+
+      <select class="form-select" aria-label="Grau de parentesco"  [(ngModel)]="usuarioData.aux2Parentesco">
+        <option selected>Grau de parentesco</option>
+        <option value="Mãe">Mãe</option>
+        <option value="Pai">Pai</option>
+        <option value="Filho(a)">Filho(a)</option>
+        <option value="Neto(a)">Neto(a)</option>
+        <option value="Cunhado(a)">Cunhado(a)</option>
+        <option value="Amigo(a)">Amigo(a)</option>
+        <option value="Vizinho(a)">Vizinho(a)</option>
+      </select>
+
+      <label for="nomeAux2" class="col-form-label">Nome: </label>
+      <input type="text" name="nomeAux2" id="nomeAux2" class="form-control" [(ngModel)]="usuarioData.aux2Nome">
+
+      <label for="emailAux2" class="col-form-label">E-Mail: </label>
+      <input type="email" name="emailAux2" id="emailAux2" class="form-control" placeholder="email@exemplo.com"  [(ngModel)]="usuarioData.aux2Email">
+
+      <label for="telAux2" class="col-form-label">Telefone 1: </label>
+      <input type="tel" name="telAux2" id="telAux2" class="form-control" [(ngModel)]="usuarioData.aux2Tel1">
+
+      <label for="tel2Aux2" class="col-form-label">Telefone 2: </label>
+      <input type="tel" name="tel2Aux2" id="tel2Aux2" class="form-control"  [(ngModel)]="usuarioData.aux2Tel2">
+
+    </fieldset>
+
+  </div>
+
+  <div class="fieldset2">
+
+    <fieldset class="fieldset2 form-control flex-wrap flex-shrink-1">
+
+      <legend>Endereço</legend>
+
+      <label for="cep" class="col-form-label">CEP: </label>
+      <input type="text" name="cep" id="cep" class="form-control" [(ngModel)]="usuarioData.cep">
+
+      <label for="logradouro" class="col-form-label">Logradouro: </label>
+      <input type="text" name="logradouro" id="logradouro" class="form-control" [(ngModel)]="usuarioData.logradouro">
+
+      <label for="nrResidencia" class="col-form-label">Número: </label>
+      <input type="text" name="nrResidencia" id="nrResidencia" class="form-control" [(ngModel)]="usuarioData.numeroResidencia">
+
+      <label for="complemento" class="col-form-label">Complemento: </label>
+      <input type="text" name="complemento" id="complemento" class="form-control" [(ngModel)]="usuarioData.complemento">
+
+    </fieldset>
+
+  </div>
+
+  <button type="submit" class="btn btn-success">Cadastrar</button>
+
+  </form>
+
+  <app-footer></app-footer>

@@ -5,6 +5,8 @@ import { AgendamentosAdmComponent } from './agendamentos-adm/agendamentos-adm.co
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { AgendamentosComponent } from './agendamentos/agendamentos.component';
+import { NewUserFormComponent } from './new-user-form/new-user-form.component';
+import { AgendamentoFormComponent } from './agendamento-form/agendamento-form.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -12,5 +14,6 @@ export const routes: Routes = [
   { path: 'agendamentos', component: AgendamentosComponent},
   { path: 'profile', component: ProfileComponent},
   { path: 'login', component: LoginComponent},
-
+  { path: 'usuario/new', component: NewUserFormComponent},
+  { path: 'agendamentos/new', component: AgendamentoFormComponent}
 ];
