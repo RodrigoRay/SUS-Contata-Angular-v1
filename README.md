@@ -1,6 +1,6 @@
-![banner-sus contata (1)](https://github.com/ashkgabriel/SUS-Contata-Angular-v1/assets/59896608/bf0a91bb-05a8-44c0-ba1e-7b13a0b3586f)
+![banner-sus contata](https://github.com/ashkgabriel/SUS-Contata-Angular-v1/assets/59896608/26e76962-7288-4778-a243-79c1dedfdf9a)
 
- SUSContataAngularV1
+SUSContataAngularV1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
