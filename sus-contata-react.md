@@ -9,7 +9,7 @@
     <a href="#prototipo">Protótipo</a>  |  
     <a href="#documentacao">Documentação</a>  |  
     <a href="#tecnologias">Tecnologias</a>  |  
-    <a href="#equipe">Equipe</a>
+    <a href="#equipe">Equipe</a> 
 </p>
    
 <span id="sobre">
